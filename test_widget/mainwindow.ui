@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>770</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Input Image:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtInputImage">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>361</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbBrowse">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>40</y>
+      <width>89</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>681</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="rdMedian">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Median Blur</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rdGaussian">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>50</y>
+       <width>112</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Gaussian Blur</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="txtOutputImage">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>270</y>
+      <width>361</width>
+      <height>25</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output Image:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pbOutput">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>270</y>
+      <width>89</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    border: 2px solid #222222; 
+    border-radius: 10px; 
+    background-color: #9999ff; 
+    min-width: 80px; 
+    min-height: 35px; </string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="chkDisplayImage">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>461</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Display Image After Saving</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>770</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
